@@ -2,13 +2,13 @@
 #include <gtest/gtest.h>
 #include "task.h"
 
-TEST(TestCaseName, TestName) {
+TEST(TestCaseName1, TestName1) {
 	int average = 12;
 	int num = CreateItemsNum(average);
 	EXPECT_TRUE(num > 0 && num <= average * 2);
 }
 
-TEST(TestCaseName, TestName) {
+TEST(TestCaseName2, TestName2) {
 	int cashirNum = 4;
 	double clientIntensity = 0.5;
 	int timeForOneItem = 600;
@@ -22,7 +22,7 @@ TEST(TestCaseName, TestName) {
 		productsAverageNum * 2 * timeForOneItem);
 }
 
-TEST(TestCaseName, TestName) {
+TEST(TestCaseName3, TestName3) {
 	int cashirNum = 3;
 	double clientIntensity = 1;
 	int timeForOneItem = 600;
@@ -35,7 +35,7 @@ TEST(TestCaseName, TestName) {
 	EXPECT_EQ(shop.cashiers.size(), cashirNum);
 }
 
-TEST(TestCaseName, TestName) {
+TEST(TestCaseName4, TestName4) {
 	int cashirNum = 4;
 	double clientIntensity = 1;
 	int timeForOneItem = 800;
@@ -53,7 +53,7 @@ TEST(TestCaseName, TestName) {
 	EXPECT_TRUE(flag);
 }
 
-TEST(TestCaseName, TestName) {
+TEST(TestCaseName5, TestName5) {
 	int cashirNum = 3;
 	double clientIntensity = 1;
 	int timeForOneItem = 600;
@@ -72,7 +72,7 @@ TEST(TestCaseName, TestName) {
 		n <= productsAverageNum + 1);
 }
 
-TEST(TestCaseName, TestName) {
+TEST(TestCaseName6, TestName6) {
 	int cashirNum = 4;
 	double clientIntensity = 0.5;
 	int timeForOneItem = 300;
@@ -85,7 +85,7 @@ TEST(TestCaseName, TestName) {
 	EXPECT_EQ(shop.workingTime * clientIntensity / 1000, shop.clients.size());
 }
 
-TEST(TestCaseName, TestName) {
+TEST(TestCaseName7, TestName7) {
 	int cashirNum = 4;
 	double clientIntensity = 0.5;
 	int timeForOneItem = 300;
@@ -100,7 +100,7 @@ TEST(TestCaseName, TestName) {
 		real.rejectedClients == 0);
 }
 
-TEST(TestCaseName, TestName) {
+TEST(TestCaseName8, TestName8) {
 	int cashirNum = 0;
 	double clientIntensity = 1;
 	int timeForOneItem = 600;
@@ -115,7 +115,7 @@ TEST(TestCaseName, TestName) {
 		real.rejectedClients == shop.clients.size());
 }
 
-TEST(TestCaseName, TestName) {
+TEST(TestCaseName9, TestName9) {
 	int cashirNum = 3;
 	double clientIntensity = 2;
 	int timeForOneItem = 500;
